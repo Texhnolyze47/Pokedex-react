@@ -27,15 +27,13 @@ const Pokemons = () => {
 	}, []);
 
 	return (
-		<div className="container-fetch">
-			<div className="fetch">
+		<div className="container-grid">
 				{pokemonDetails.map((pokemonDetail) => (
 					<div key={pokemonDetail.name}>
-						<h2>{pokemonDetail.name}</h2>
-                        <img src={pokemonDetail.sprites.front_default} alt="pokemon"/>
+						<h2 className="grid-item">{pokemonDetail.name}</h2>
+                        <img className="grid-item" src={pokemonDetail.sprites.front_default} alt="pokemon"/>
 					</div>
 				))}
-			</div>
 		</div>
 	);
 };
