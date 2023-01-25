@@ -1,4 +1,5 @@
 import pokeball from './assets/pokeball.png';
+import Pokemons from './components/pokemons';
 import './App.css';
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
       <div className='container-nav'>
         <img className='pokemon-icon' src={pokeball} alt='icon' />
         <p className='title'>Pokedex</p>
+      </div>
+      <div className='container-body'>
+        <Pokemons/>
       </div>
     </div>
   );
