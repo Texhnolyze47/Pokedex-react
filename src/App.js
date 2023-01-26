@@ -1,5 +1,5 @@
 import pokeball from './assets/pokeball.png';
-import Pokemons from './components/pokemons';
+import Pokemons from './components/PokemonsList';
 import './App.css';
 
 function App() {
