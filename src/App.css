@@ -4,6 +4,37 @@
   box-sizing: border-box;
 }
 
+.fire{
+  background-color: red;
+  border-radius: 20px;
+  margin: 0 20% 0 20%;
+  padding: 6px 9px;
+  color: white;
+}
+
+.grass{
+  background-color: green;
+  margin: 0 20% 0 20%;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.water{
+  background-color: blue;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+color: white;
+}
+
+.poison{
+  background-color: purple;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+color: white;
+}
 body{
   background-color: #fdfffc;
 }
@@ -30,23 +61,59 @@ body{
 }
 
 .container-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  display: flex;
   gap: 30px;
-  width: 99%;
+  border: #e71d36 2px solid ;
+  border-radius: 20px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  margin-bottom: auto;
+  margin-top: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.grid-item{
+.item{
+  display: flex;
   background-color: #eee;
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
 }
 
+.list-item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+
+}
+
+.id-item{
+  background-color: lightgray;
+  padding: 2% 5% 2% 5%;
+  border-radius: 20px;
+  font-size: 1em;
+  color: gray;
+} 
+
+.img-item{
+  padding: 0 20% 0 20%;
+}
+
+.text-item{
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20% 0 20%;
+}
+
+.types{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .container-modal{
   position: absolute;
   top: 0;
