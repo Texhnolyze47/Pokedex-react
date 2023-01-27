@@ -1,5 +1,5 @@
 import pokeball from './assets/pokeball.png';
-import Pokemons from './components/PokemonsList';
+import PokemonsList from './components/PokemonsList';
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <p className='title'>Pokedex</p>
       </div>
       <div className='container-body'>
-        <Pokemons />
+        <PokemonsList />
       </div>
     </div>
   );
