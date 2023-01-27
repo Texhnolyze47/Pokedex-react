@@ -10,7 +10,7 @@ function App() {
         <p className='title'>Pokedex</p>
       </div>
       <div className='container-body'>
-        <Pokemons className="container-grid" />
+        <Pokemons />
       </div>
     </div>
   );
