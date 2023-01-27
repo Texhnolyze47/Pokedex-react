@@ -2,6 +2,8 @@ const Modal = (props) => {
 
     return(
         <div className="container-modal">
+                {console.log(props)}
+
           {props.pokemon.name &&
             <div className="modal-content" >
 
