@@ -1,16 +1,14 @@
-const Modal = (props) => {   
+const Modal = ({pokemon , closeModal}) => {   
 
     return(
         <div className="container-modal">
-                {console.log(props)}
-
-          {props.pokemon.name &&
+          {pokemon.name &&
             <div className="modal-content" >
 
-              <h1>{props.pokemon.name}</h1>
-              <img src={props.pokemon.sprites?.front_default} alt={props.pokemon.name} />
-              <p>Type: {props.pokemon.types[0].type.name} </p>
-              <button onClick={props.closeModal}>Close</button>
+              <h1>{pokemon.name}</h1>
+              <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
+              <p>Type: {pokemon.types[0].type.name} </p>
+              <button onClick={closeModal}>Close</button>
             </div>
           }
       </div>
