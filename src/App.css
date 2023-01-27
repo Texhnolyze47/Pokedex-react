@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +35,7 @@ color: white;
   margin: 0 10px 0 10px;
   border-radius: 20px;
   padding: 6px 9px;
-color: white;
+  color: white;
 }
 body{
   background-color: #fdfffc;
@@ -93,7 +95,7 @@ body{
 
 .id-item{
   background-color: lightgray;
-  padding: 2% 5% 2% 5%;
+  padding: 2% 8% 2% 8%;
   border-radius: 20px;
   font-size: 1em;
   color: gray;
@@ -104,9 +106,8 @@ body{
 }
 
 .text-item{
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0 20% 0 20%;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20% 15% 20%;
 }
 
 .types{
