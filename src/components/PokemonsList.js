@@ -11,27 +11,21 @@ const PokemonsList = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false)
 	const [selectedPokemon, setSelectedPokemon] = useState({})
 
+	const fetchData = async () => {
+		try{
+			const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10");
+			setPokemons(response.data.results);
 
+			const pokemonData = await Promise.all(response.data.results.map( pokemon => 
+				axios.get(pokemon.url)));
+				setPokemonDetails(pokemonData.map(response => response.data))
+		}catch(error){
+			console.error(error)
+		}
+	}
 
 	useEffect(() => {
-		axios
-			.get("https://pokeapi.co/api/v2/pokemon?limit=10")
-			.then((response) => {
-				setPokemons(response.data.results);
-				const pokemonPromises = response.data.results.map((pokemon) =>
-					axios.get(pokemon.url),
-				);
-				axios
-					.all(pokemonPromises)
-					.then(
-						axios.spread((...responses) => {
-							const pokemonData = responses.map((response) => response.data);
-							setPokemonDetails(pokemonData);
-						}),
-					)
-					.catch((error) => console.error(error));
-			})
-			.catch((error) => console.error(error));
+		fetchData()
 	}, []);
 
 	const handleClick = (pokemon) =>{
