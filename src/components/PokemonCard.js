@@ -1,4 +1,5 @@
-import TypeIcon from "./TypeIcon";
+import TypeIcon from "./TypeIcon"
+import "./PokemonCard.css"
 
 const PokemonCard = ({pokemon, onKeyDown, onClick}) => {
 	return (

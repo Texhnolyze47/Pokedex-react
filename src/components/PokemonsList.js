@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "./PokemonModal.js";
 import axios from "axios";
-
+import './PokemonsList.css'
 import { useEffect, useState } from "react";
 import PokemonCard from "./PokemonCard.js";
 

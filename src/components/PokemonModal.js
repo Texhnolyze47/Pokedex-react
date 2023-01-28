@@ -1,3 +1,4 @@
+import './PokemonModal.css'
 const Modal = ({pokemon , closeModal}) => {   
 
     return(
