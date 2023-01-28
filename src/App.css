@@ -72,9 +72,8 @@ body{
   margin-right: auto;
   margin-bottom: auto;
   margin-top: 50px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .item{
@@ -87,6 +86,7 @@ body{
 
 .list-item{
   display: flex;
+  flex: 1 0 15%;
   flex-direction: column;
   padding: 20px;
   align-items: center;
