@@ -1,0 +1,134 @@
+.types{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  
+
+.fire{
+  background-color: red;
+  border-radius: 20px;
+  margin: 0 20% 0 20%;
+  padding: 6px 9px;
+  color: white;
+}
+
+.grass{
+  background-color: green;
+  margin: 0 20% 0 20%;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.water{
+  background-color: blue;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+color: white;
+}
+
+.poison{
+  background-color: purple;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.normal{
+  background-color: gray;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.fighting{
+  background-color: #bd6c5d;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.ground{
+  background-color: #e2c56f;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.flying{
+  background-color: #9aa9ff;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.psychic{
+  background-color: #ff6ea8;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.bug{
+  background-color: #b7c544;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.rock{
+  background-color: #c5b77d;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+.ghost{
+  background-color: #7d7dc5;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.dragon{
+  background-color: #8c7df1;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.dark{
+  background-color: #8c6f61;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.steel{
+  background-color: #b7b7c5;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}
+
+.fairy{
+  background-color: #f1a9f1;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: white;
+}

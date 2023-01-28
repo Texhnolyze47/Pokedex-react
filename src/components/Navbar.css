@@ -1,0 +1,23 @@
+.container-nav{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    background: #e71d36;
+  }
+  .pokemon-icon{
+    padding-left: 100px;
+    opacity: 0.1;
+  }
+
+  
+.title{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-top: 20px;
+    left: 100px;
+  }
+  
