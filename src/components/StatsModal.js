@@ -1,15 +1,12 @@
 const statsModal = ({pokemon}) => {
     return(
         <div>
-        {console.log(pokemon)}
-        <p>{pokemon.stats.map((stats) => (
-            <p>
-                {stats.stat.name}
-                {stats.base_stat}
+            {pokemon.stats.map((stats) => (
+            <p key={stats.stat.name}>
+                {`${stats.stat.name} ${stats.base_stat}`}      
             </p>
-        ))}</p>
-    </div>
-
+            ))}
+        </div>
     )
 
 }
