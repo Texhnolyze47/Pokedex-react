@@ -17,8 +17,15 @@
     border-radius: 20px;
   }
 
+  .layout-modal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .modal-title{
     display: flex;
     justify-content: center;
   }
+
 

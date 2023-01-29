@@ -1,19 +1,28 @@
+import TypeIcon from "./TypeIcon"
+
 const InfoModal = ({pokemon}) => {
 
     return(
         <div className="container-info">
-            <p>ID {pokemon.id}</p>
-            <p>Height {pokemon.height}</p>
-            <p>Weight {pokemon.weight}</p>
-            { pokemon.abilities.map((ability) => (
-                <p key={ability.ability.name}>{ability.ability.name}</p>
-            ))}
-            {pokemon.types.map((types) => (
-                <p key={types.type.name}>{types.type.name}</p>
-            ))}
-            { pokemon.forms.map((forms) => (
-                <p key={forms.name}>{forms.name}</p>
-            ))}
+            <div>
+                <p>{`ID  ${pokemon.id}`}</p>
+                <p>{`Height  ${pokemon.height}`}</p>
+                <p>{`Weight  ${pokemon.weight}`}</p>
+                <div>
+                    Abilities:
+                    { pokemon.abilities.map((ability) => (
+                    <span key={ability.ability.name}>{` ${ability.ability.name}`}</span>
+                ))}
+                </div>
+                <TypeIcon pokemon={pokemon} />
+                <div>
+                    Forms:
+                { pokemon.forms.map((forms) => (
+                    <span key={forms.name}>{forms.name}</span>
+                ))}
+                </div>
+                
+            </div>
         </div>
     )
 }
