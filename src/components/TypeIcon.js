@@ -28,9 +28,9 @@ const TypeIcon = ({pokemon}) => {
         {pokemon.types.map((types, i) => {
             if (typeIcons[types.type.name]) {
                 return (
-                    <p className={types.type.name} key={i}>
+                    <span className={types.type.name} key={i}>
                         {typeIcons[types.type.name]}
-                    </p>
+                    </span>
                 );
             } else {
                 return <p key={i}>Tipo desconocido</p>;
