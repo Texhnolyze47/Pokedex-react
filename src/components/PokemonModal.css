@@ -13,19 +13,37 @@
     left: 40px;
     right: 40px;
     bottom: 40px;
-    background-color: papayawhip;
+    background-color: #fff;
     border-radius: 20px;
   }
 
   .layout-modal{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .modal-title{
     display: flex;
     justify-content: center;
+    flex-grow: 2;
   }
 
+  .title-container{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2vw;
+    align-items: center;
+  }
 
+  .back-button{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1vw;
+  }
+
+  .img-margin{
+    width: 20vw;
+    height: 40vh;
+  }
